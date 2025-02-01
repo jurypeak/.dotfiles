@@ -1,7 +1,7 @@
 # Judas Hyprland
 ![](screenshots/1.png)
 
-Welcome to **Judas Hyprland**!
+Welcome to **My Hyprland**!
 
 Thank you for visiting my Hyprland rice. I hope you like my configuration whether you're a power user or just starting out, I hope this rice brings an aesthetic and functional boost to your workflow.
 
