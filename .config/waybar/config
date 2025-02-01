@@ -1,0 +1,135 @@
+﻿{
+	"layer": "top",
+        "height": 50,
+        "margin-top": 10,
+        "margin-left": 10,
+        "margin-right": 10,
+	"modules-left": ["custom/launcher","hyprland/workspaces"],
+	"modules-center": ["image#album-art","custom/spotify"],
+	"modules-right": ["cpu", "memory", "wireplumber", "network", "backlight", "battery", "clock"],
+	
+  "wireplumber": {
+    "tooltip": false,
+    "scroll-step": 5,
+    "format": "{icon}",
+    "format-muted": "󰝟",
+    "on-click": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +10%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -10%",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "format-icons": {
+      "default": ["", "", " "]
+    }
+  },
+
+
+    "network": {
+        /* "format-wifi": "直", */
+        "format-wifi": "{icon} ",
+        "format-ethernet": "󰛳",
+        "format-disconnected": "󰅛",
+        "tooltip": false,
+        "on-click": "kitty --class nmwui sudo nmtui",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    },
+
+	"backlight": {
+		"tooltip": false,
+		"format": "{icon} ",
+		"interval":1,
+        "on-scroll-up": "brightnessctl -d amdgpu_bl1 set +5%",
+		"on-scroll-down": "brightnessctl -d amdgpu_bl1 set 5%-",
+                "format-icons": ["󰖨"]
+	},
+
+
+  "battery": {
+      "states": {
+          "full": 100,
+          "good": 95,
+          "decent": 50,
+          "warning": 30,
+          "critical": 20
+      },
+      "format": "{icon}  {capacity}%",
+      "format-time": "{H} h {M} min",
+      "format-alt": "{icon} {time}",
+      "format-icons": ["", "", "", "", ""]
+  },
+
+
+  "clock": {
+      "format": "{:%H:%M}",
+      "format-alt": "{:%D}",
+      "tooltip": false
+    },
+  
+
+
+  "cpu": {
+      "interval": 15,
+      "format": "  {}%",
+      "max-length": 10,
+      "on-click":"kitty -- btop",
+      "tooltip": false
+  },
+
+
+  "memory": {
+      "interval": 30,
+      "format": "  {}%",
+      "max-length": 10,
+      "tooltip": false
+  },
+
+  "image#album-art": {
+       "exec":"~/.config/waybar/scripts/album_art.sh",
+       "size": 30,
+       "interval": 5
+  },
+
+
+   "custom/spotify": {
+        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player ncspot",
+	"max-length" : 30,
+        "format": "{}",
+        "return-type": "json",
+        "on-click": "playerctl -p ncspot play-pause",
+        "on-click-right": "playerctl -p ncspot next",
+        "on-scroll-down": "playerctl -p ncspot previous"
+    },
+
+  "custom/launcher":{
+      "format": "",
+      "on-click": "exec /home/judas/.config/rofi/launchers/type-6/launcher.sh",
+      "on-click-right": "killall rofi",
+      "tooltip": false
+  },
+
+  "custom/power-menu": {
+      "format": " ⏻ ",
+      "on-click": "wlogout",
+  }, 
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "reload_style_on_change": true,
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": "",
+      "active": ""
+    },
+    "sort-by-number": true
+  },
+}

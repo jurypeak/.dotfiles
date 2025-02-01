@@ -1,0 +1,60 @@
+﻿* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 14pt;
+}
+
+window {
+    background: url("/home/judas/wallpaper/blur_1.png")
+    
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    border: 2px solid #303030;
+    border-radius: 10px;
+    background-color: #010101;
+    margin: 20px;
+}
+
+button:hover {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+button:active {
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+button:focus {
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+
+#lock {
+    background-image: image(url("./lock.png"));
+}
+#logout {
+    background-image: image(url("./logout.png"));
+}
+#suspend {
+    background-image: image(url("./sleep.png"));
+}
+#shutdown {
+    background-image: image(url("./power.png"));
+}
+#reboot {
+    background-image: image(url("./restart.png"));
+}
+#hibernate {
+    background-image: image(url("./restart.png"));
+}
