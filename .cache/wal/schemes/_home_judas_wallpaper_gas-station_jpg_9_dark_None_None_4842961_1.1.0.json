@@ -1,0 +1,28 @@
+{
+    "checksum": "919718efc7ec501dde3f814b2ca09fc0",
+    "wallpaper": "/home/judas/wallpaper/gas-station.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#011C22",
+        "foreground": "#bfc6c7",
+        "cursor": "#bfc6c7"
+    },
+    "colors": {
+        "color0": "#011C22",
+        "color1": "#536869",
+        "color2": "#965D70",
+        "color3": "#247094",
+        "color4": "#61929D",
+        "color5": "#92ABAA",
+        "color6": "#A8BAC1",
+        "color7": "#bfc6c7",
+        "color8": "#596a6e",
+        "color9": "#536869",
+        "color10": "#965D70",
+        "color11": "#247094",
+        "color12": "#61929D",
+        "color13": "#92ABAA",
+        "color14": "#A8BAC1",
+        "color15": "#bfc6c7"
+    }
+}

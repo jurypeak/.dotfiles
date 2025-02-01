@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/judas/wallpaper/2.jpg"
+let background = "#010101"
+let foreground = "#bfbfbf"
+let cursor     = "#bfbfbf"
+
+" Colors
+let color0  = "#010101"
+let color1  = "#EE1F25"
+let color2  = "#CD3E46"
+let color3  = "#DD7285"
+let color4  = "#939393"
+let color5  = "#AFAFAF"
+let color6  = "#E99B9B"
+let color7  = "#bfbfbf"
+let color8  = "#615050"
+let color9  = "#EE1F25"
+let color10 = "#CD3E46"
+let color11 = "#DD7285"
+let color12 = "#939393"
+let color13 = "#AFAFAF"
+let color14 = "#E99B9B"
+let color15 = "#bfbfbf"

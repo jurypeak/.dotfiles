@@ -1,0 +1,21 @@
+set $wallpaper /home/judas/wallpaper/2.jpg
+
+set $background #010101
+set $foreground #bfbfbf
+
+set $color0 #010101
+set $color1 #EE1F25
+set $color2 #CD3E46
+set $color3 #DD7285
+set $color4 #939393
+set $color5 #AFAFAF
+set $color6 #E99B9B
+set $color7 #bfbfbf
+set $color8 #615050
+set $color9 #EE1F25
+set $color10 #CD3E46
+set $color11 #DD7285
+set $color12 #939393
+set $color13 #AFAFAF
+set $color14 #E99B9B
+set $color15 #bfbfbf

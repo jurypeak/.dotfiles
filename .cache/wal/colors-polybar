@@ -1,0 +1,8 @@
+background = d9010101
+background-alt = 615050
+foreground = bfbfbf
+foreground-alt = bfbfbf
+primary = EE1F25
+secondary = CD3E46
+alert = DD7285
+disabled = bfbfbf
