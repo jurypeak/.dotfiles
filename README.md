@@ -1,4 +1,4 @@
-# Judas Hyprland
+# Arch Hyprland
 ![](screenshots/1.png)
 
 Welcome to **My Hyprland**!
